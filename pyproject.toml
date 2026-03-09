@@ -1,0 +1,48 @@
+[project]
+name = "plot-styler"
+version = "0.1.0"
+description = "Customizations for my personal science plot styles to be used on top of SciencePlots library"
+readme = "README.md"
+authors = [
+    { name = "Elijah C", email = "ejd.christensen@gmail.com" }
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+keywords = [
+    "matplotlib-style-sheets",
+    "matplotlib-figures",
+    "scientific-papers",
+    "thesis-template",
+    "matplotlib-styles",
+    "python",
+]
+
+requires-python = ">=3.11"
+dependencies = [
+    "scienceplots>=2.2.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "numpy"]
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["scienceplots/tests"]
+
+[tool.ruff]
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Exclude annotations and type comments
+lint.ignore = ["ANN"]
