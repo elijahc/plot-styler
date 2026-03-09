@@ -1,6 +1,6 @@
 [project]
 name = "plot-styler"
-version = "0.3.0"
+version = "0.4.0"
 description = "Customizations for my personal science plot styles to be used on top of SciencePlots library"
 readme = "README.md"
 authors = [
