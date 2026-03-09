@@ -1,0 +1,33 @@
+# Matplotlib style for Sage journals
+# Based on the Article Format section at the link below
+# https://www.sagepub.com/journals/information-for-authors/preparing-your-manuscript?_gl=1*gkzaqg*_ga*MTQ2Nzc0Njg3My4xNzczMDgzMjEw*_ga_60R758KFDG*czE3NzMwODMyMDckbzEkZzEkdDE3NzMwODMyMTAkajYwJGwwJGgxMTA0MDQyNTc2*_fplc*V0hjUHdqM2V1UUloU2xua2h5YW9kcXBYdk50cnRreTAlMkZMbmZTY05HM3lpcE9xbEElMkZ6eW1LWUhzejBzOEZSSnRBUFE5cFM4Qjg4bzN3YnhMM0hLekJiTnZyVkxFajV0Wk0za0NkZlZjMEdIWk5ScFN4TXZ3UFl3eDR2bGlwZyUzRCUzRA..*FPAU*MjE3NzUwMzM3LjE3NzMwODMyMTA. 
+# This style should work for most two-column journals
+
+# Set line style as well for black and white graphs
+axes.prop_cycle : (cycler('color', ['k', 'r', 'b', 'g']) + cycler('ls', ['-', '--', ':', '-.']))
+
+# Figure size
+figure.figsize : 3.3, 2.5  # max width is 3.5 for single column
+figure.dpi : 800
+
+# Font sizes
+axes.labelsize: 7
+xtick.labelsize: 7
+ytick.labelsize: 7
+legend.fontsize: 7
+font.size: 7    
+
+# Font Family
+font.family : sans-serif
+font.sans-serif: DejaVu Sans, Arial, Helvetica, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+mathtext.fontset : dejavusans
+
+# Set line widths
+axes.linewidth : 0.5
+grid.linewidth : 0.5
+lines.linewidth : 1.
+lines.markersize: 3
+
+# Always save as 'tight'
+# savefig.bbox : tight
+# savefig.pad_inches : 0.01  # Use virtually all space when we specify figure dimensions
